@@ -2,7 +2,7 @@ const { ethers } = require("hardhat");
 
 async function main() {
   const BadgeContract = await ethers.getContractFactory("CreatorBadge");
-  const badgeContract = await BadgeContract.deploy("Oat");
+  const badgeContract = await BadgeContract.deploy();
 
   console.log("My Badge Contract addess is : ", badgeContract.address);
 }
